@@ -1,0 +1,68 @@
+{
+  "name": "browser-fingerprint-js",
+  "version": "0.0.1",
+  "description": "Browser fingerprinting library based on fingerprint2js and clientjs. ",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "docs": "vue-cli-service build",
+    "library": "rm -r dist && cd ./src/fingerprint && webpack && cd ../../",
+    "cleanDist": "rm dist/fingerprint.min.js && rm dist/fingerprint.js",
+    "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yolomoth/browser-fingerprint-js.git"
+  },
+  "dependencies": {
+    "@types/clientjs": "^0.1.0",
+    "@types/fingerprintjs2": "^2.0.0",
+    "@types/webpack-env": "^1.14.0",
+    "core-js": "^2.6.5",
+    "fingerprintjs2": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "install": "^0.13.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
